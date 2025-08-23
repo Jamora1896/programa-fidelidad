@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <title>Programa de Fidelidad</title>
+</head>
+
+<body>
+    <div class="contenedor-formulario">
+        <h1 class="marca">PROGRAMA DE FIDELIDAD</h1>
+        <p class="descripcion">
+            Al ser parte del Programa de Fidelidad recibirás información sobre nuestras últimas colecciones,
+            ofertas, eventos y mucho más. ¡Regístrate y disfruta de estos beneficios!
+        </p>
+        <form class="formulario" id="formularioFidelidad">
+            <section class="contenedor-datos-personales">
+                <div class="campo">
+
+
+                    <label for="tipoId">Tipo de Identificación</label>
+                    <select id="tipoId" name="tipoId" required>
+                        <option value="">Seleccione...</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="numeroId">Número de Identificación</label>
+                    <input type="text" name="numeroId" id="numeroId" placeholder="Numero de documento" required>
+                </div>
+
+                <div class="campo">
+                    <label for="primerNombre">Primer Nombre</label>
+                    <input type="text" name="primerNombre" id="primerNombre" placeholder="Primer Nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="segundoNombre">Segundo Nombre</label>
+                    <input type="text" name="segundoNombre" id="segundoNombre" placeholder="Segundo Nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="primerApellido">Primer Apellido</label>
+                    <input type="text" name="primerApellido" id="primerApellido" placeholder="Primer Apellido" required>
+                </div>
+
+                <div class="campo">
+                    <label for="segundoApellido">Segundo Apellido</label>
+                    <input type="text" name="segundoApellido" id="segundoApellido" placeholder="Segundo Apellido"
+                        required>
+                </div>
+            </section>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+            <input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
+
+            <label for="direccion">Dirección</label>
+            <input type="text" name="direccion" id="direccion" placeholder="Ejm: Carrera 50#19-80" required>
+
+            <label for="ciudad">Ciudad</label>
+            <select name="ciudad" id="ciudad">
+                <option value="">Seleccione...</option>
+            </select>
+
+            <label for="departamento">Departamento</label>
+            <select name="departamento" id="departamento">
+                <option value="">Seleccione...</option>
+            </select>
+
+            <label for="pais">País</label>
+            <select name="pais" id="pais" required>
+                <option value="">Seleccione...</option>
+            </select>
+
+            <label for="marca">Marca</label>
+            <select name="marca" id="marca" required>
+                <option value="">Seleccione...</option>
+            </select>
+
+            <div class="contenedor-checkbox">
+                <h3>Tratamiento de datos</h3>
+                <p>Mediante el registro de mis datos personales autorizo a <strong>Comodin S.A.S</strong> y a las
+                    sociedades en las que
+                    ésta tenga participación, con las que se fusione o integre; para la recolección, almacenamiento y
+                    uso de los mismos con la finalidad de contactarme por los canales de comunicación, a través de
+                    correo electrónico, llamadas telefónicas, envío de SMS, WhatsApp, herramientas de mensajería
+                    instantánea, o cualquier canal de comunicación conocido o por conocerse, siempre que sea autorizado
+                    por el Titular para ofrecer servicios y campañas comerciales; ofertar servicios de valor agregado;
+                    participar en programas de beneficios y fidelización; consultar en centrales de información para
+                    fines comerciales y de servicios de crédito; consultar hábitos de consumo y aficiones para ofertas,
+                    promociones, servicios, entre otros; contactarlo para realizar estudios de mercado y encuestas de
+                    satisfacción; gestionar tramites (solicitudes, quejas y reclamos); compartir con empresas aliadas,
+                    asociados, sucursales, franquicias, filiales y subsidiarias para la oferta de servicios, en los
+                    términos de la política de tratamiento y protección de datos personales, en donde se establecen los
+                    principios para el manejo de mis datos personales.</p>
+            </div>
+            <div class="contenedor-tratamiento-datos">
+                <input type="checkbox" id="acepto" name="acepto" required>
+                <label for="acepto">Acepto tratamiento de datos </label>
+            </div>
+
+
+            <button type="submit" class="boton-enviar">Enviar</button>
+    </div>
+    </form>
+</body>
+
+</html>
