@@ -33,11 +33,11 @@ h1.marca {
     max-height: 150px;
     overflow-y: auto;
     font-size: 14 px;
-    color: #444;
+    color:#444;
     padding: 10px; 
     border: 1px solid #ccc;
     border-radius: 8px;
-    background: #f9f9f9;
+    background: rgb(240, 240, 240);
     text-align: justify;
     margin-bottom: 20px;
 }
@@ -76,7 +76,7 @@ form select {
 
 form input:focus,
 form select:focus {
-    border-color: #003366;
+    border-color: gray;
     outline: none;
 }
 
@@ -95,18 +95,12 @@ form select:focus {
     max-height: 150px;
     overflow-y: auto;
     font-size: 14px;
-    color: #444;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background: #f9f9f9;
+    background: rgb(240, 240, 240);
 }
-.contenedor-tratamiento-datos {
-  display: flex;
-  align-items: center;
-  gap: 5px; /* separa un poco */
-  flex-direction: row-reverse; /* invierte el orden */
-}
+
 
 .boton-enviar {
     display: block;
@@ -125,4 +119,25 @@ form select:focus {
 
 .boton-enviar:hover {
     background-color: #0055aa;
+}
+
+/*validacion */
+.incorrecto {
+  border: 1px solid gray;
+}
+
+.correcto {
+  border: 2px solid gray;
+  background:rgb(240, 240, 240);
+}
+
+.mensaje-error {
+  display: block;
+  font-size:smaller;
+  margin-top: 1px;
+  color: red;
+}
+
+.correcto + .mensaje-error {
+  color: gray;
 }
