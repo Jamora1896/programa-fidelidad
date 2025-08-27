@@ -15,7 +15,6 @@ export function validaciones() {
         });
     });
 }
-
 function validarCampo(input) {
     const valor = input.value.trim();
     let valido = true;
@@ -28,7 +27,7 @@ function validarCampo(input) {
                 mensaje = "Este campo es obligatorio.";
             } else if (!REGEX_PATTERNS.numeroId.test(valor)) {
                 valido = false;
-                mensaje = "solo números, entre 6 y 12 dígitos.";
+                mensaje = "Solo números, entre 6 y 12 dígitos.";
             }
             break;
         case "primerNombre":
