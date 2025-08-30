@@ -6,6 +6,7 @@
 }
 
 body {
+    background-image:url(/Frontend/img/Fondo.png);
     background-color: #f8f9fa;
     color: #222;
     display: flex;
@@ -18,7 +19,7 @@ body {
     background: #fff;
     padding: 25px;
     border-radius: 12px;
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -30,16 +31,9 @@ h1.marca {
 }
 
 .descripcion {
-    max-height: 150px;
-    overflow-y: auto;
-    font-size: 14 px;
-    color:#444;
-    padding: 10px; 
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background: rgb(240, 240, 240);
+    padding: 20px; 
     text-align: justify;
-    margin-bottom: 20px;
+    
 }
 
 .contenedor-datos-personales {
@@ -88,6 +82,7 @@ form select:focus {
 .contenedor-checkbox h3 {
     color: #003366;
     text-align: center;
+    padding-bottom: 10px;
 
 }
 
@@ -99,8 +94,22 @@ form select:focus {
     border: 1px solid #ccc;
     border-radius: 8px;
     background: rgb(240, 240, 240);
+    text-align: justify;
 }
 
+.contenedor-tratamiento-datos {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-start; 
+}
+.contenedor-tratamiento-datos label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contenedor-tratamiento-datos span {
+  white-space: nowrap;
+}
 
 .boton-enviar {
     display: block;
@@ -135,9 +144,9 @@ form select:focus {
   display: block;
   font-size:smaller;
   margin-top: 1px;
-  color: red;
+  color:  #003366;
 }
 
 .correcto + .mensaje-error {
-  color: gray;
+  color: #003366;
 }

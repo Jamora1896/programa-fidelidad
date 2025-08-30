@@ -5,5 +5,6 @@ export const REGEX_PATTERNS = {
     segundoApellido: /^[a-zA-ZáéíóúÁÉÍÓÚñÑ]{2,30}$/,
     numeroId: /^\d{6,12}$/,
     fechaNacimiento: /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/,
-    direccion: /^[a-zA-Z0-9#\-\s]{5,50}$/
+    direccion:  /^(Calle|Carrera|Av|Avenida)\s+\d+[A-Z]?\s*#\s*\d+\s*[- ]?\s*\d+$/i
+
 };

@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="shortcut icon" href="/Frontend/img/logo.jpeg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/Frontend/css/estilos.css">
     <title>Programa de Fidelidad</title>
 </head>
 
 <body>
     <div class="contenedor-formulario">
-        <h1 class="marca">PROGRAMA DE FIDELIDAD</h1>
+        <h1 class="marca">GCO</h1>
         <p class="descripcion">
             Al ser parte del Programa de Fidelidad recibirás información sobre nuestras últimas colecciones,
             ofertas, eventos y mucho más. ¡Regístrate y disfruta de estos beneficios!
@@ -23,6 +25,9 @@
                     <label for="tipoId">Tipo de Identificación</label>
                     <select id="tipoId" name="tipoId" required>
                         <option value="">Seleccione...</option>
+                        <option value="CC">Cédula de Ciudadanía</option>
+                        <option value="CE">Cédula de Extranjería</option>
+                        <option value="PA">Pasaporte</option>
                     </select>
                 </div>
                 <div class="campo">
@@ -71,11 +76,18 @@
             <label for="pais">País</label>
             <select name="pais" id="pais" required>
                 <option value="">Seleccione...</option>
+                <option value="Colombia">Colombia</option>
             </select>
 
             <label for="marca">Marca</label>
             <select name="marca" id="marca" required>
                 <option value="">Seleccione...</option>
+                <option value="Americanino">Americanino</option>
+                <option value="American Eagle">American Eagle</option>
+                <option value="Chevignon">Chevignon</option>
+                <option value="Esprit">Esprit</option>
+                <option value="Naf Naf">Naf Naf</option>
+                <option value="Rifle">Rifle</option>
             </select>
 
             <div class="contenedor-checkbox">
@@ -98,15 +110,13 @@
             <div class="contenedor-tratamiento-datos">
                 <label>
                     <input type="checkbox" id="acepto" name="acepto" required>
-                    Acepto Tratamiento de datos
+                    <span>Acepto Tratamiento de datos</span>
                 </label>
             </div>
-
-
             <button type="submit" class="boton-enviar">Enviar</button>
     </div>
     </form>
-    <script type="module" src="/js/validaciones.js"></script>
+    <script type="module" src="/Frontend/js/main.js"></script>
 </body>
 
 </html>
